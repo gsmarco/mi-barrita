@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-image: url('./fondo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        .main-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        
+        header {
+            padding: 10px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .content {
+            min-height: 400px;
+            padding: 10px 0;
+            background: linear-gradient(to right, #a570e1, #2575fc); /* De morado a azul */
+            min-height: 60vh; /* Para que cubra toda la altura de la ventana */
+            margin: 0;
+        }
+        
+        footer {
+            border-top: 1px solid #dee2e6;
+            padding: 20px 0;
+            font-size: 14px;
+        }
+        
+        .logo {
+            max-height: 80px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container main-container">
+        
+        <!-- Header -->
+        <header class="row">
+            <div class="col-2">
+                <img src="./logo.jpg" alt="Logo del sitio" class="logo">
+            </div>
+            <div class="col-8">
+                <h1 class="text-center mb-4">Bienvenido a mi sitio web</h1>
+            </div>
+        </header>
+        
+        <!-- Body -->
+        <main class="content row">
+            <div class="col-12">
+                <h3 class="text-center text-white">A continuación, disfruta de nuestro video destacado:</h3>
+                        
+                <div class="video-container mt-4 text-center">
+                    <!-- Ejemplo con un iframe para un video de YouTube -->
+                    <iframe width="640" height="420" src="https://www.youtube.com/embed/UfWfZwKEZIM?si=klGAgaUtSMno0EHS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="row">
+            <div class="col-12 text-center">
+                <h5><strong>Curso:</strong> Conceptualización de servicios en la nube</h5>
+                <h5><strong>Alumno:</strong> Marco Antonio González Solis</h5>
+                <h5><strong>Código:</strong> 223371863</h5>
+                <h5><strong>Correo de Contacto:</strong> <a href="mailto:gsmarco@hotmail.com">gsmarco@hotmail.com</a></h5>
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-- Bootstrap JS Bundle con Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
